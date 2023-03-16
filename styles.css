@@ -1,5 +1,5 @@
 body {
-    background-image: url('./imgs/bpLenoBG.png'), url('./imgs/bg1.png');
+    background-image: url('imgs/bpLenoBG.png'), url('imgs/bg1.png');
     background-position: center top, center center;
     background-size: 375px, cover;
     background-repeat:no-repeat, repeat;
