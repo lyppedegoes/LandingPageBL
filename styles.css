@@ -1,8 +1,8 @@
 body {
-    background-color: #2F3047;
-    background-image: url("/imgs/bg1.png");
-    background-position: center top;
-    background-size: cover;
+    background-image: url('../imgs/bpLenoBG.png'), url('../imgs/bg1.png');
+    background-position: center top, center center;
+    background-size: 375px, cover;
+    background-repeat:no-repeat, repeat;
     
     display: flex;
     flex-direction: column;
@@ -14,27 +14,11 @@ body {
     color: white;
 }
 
-.share {
-    display: flex;
-    flex-direction: row;
-    padding: 16px;
-    background-color: #ffffff;
-    border-radius: 32px;
-
-    width: 32px;
-    height: 32px;
-    right: 0px;
-    top: 16px;
-
-}
-
-.img-cover {
-    width: 450px;
-    position: absolute;
-}
-
 h1 {
     font-size: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
     margin: 0;
 }
 
@@ -86,7 +70,7 @@ h5 {
     background: rgba(72, 73, 97, 0.4);
     backdrop-filter: blur(47px);
 
-    margin-top: 300px;
+    margin-top: 250px;
     border-radius: 24px;
     width: 275px;
 }
@@ -274,5 +258,4 @@ footer {
 
 .cr {
     color: #B8B8B8;
-
 }
