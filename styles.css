@@ -1,64 +1,36 @@
 body {
     background-image: url('./imgs/bpLenoBG.png'), url('./imgs/bg1.png');
     background-position: center top, center center;
-    background-size: 375px, cover;
+    background-size: 425px, cover;
     background-repeat:no-repeat, repeat;
     
     display: flex;
     flex-direction: column;
     align-items:center;
 
-    font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
 }
 
-h1 {
-    font-size: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    margin: 0;
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 32px;
 }
 
-h2 {
-    font-size: 16px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    margin: 0;
+head {
+    display: flex;
+    justify-content: center;
 }
 
-h3 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    margin: 0;
-
-    color: #FFFFFF;
+header {
+    display: flex;
+    justify-content: center;
 }
 
-h4 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    margin: 0;
-}
-
-h5 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 10px;
-    margin: 0;
-
-    color: #306A64;
-
+.container-top {
+    display: flex;
+    width: 100%;
 }
 
 .card {
@@ -70,23 +42,22 @@ h5 {
     background: rgba(72, 73, 97, 0.4);
     backdrop-filter: blur(47px);
 
-    margin-top: 250px;
+    margin: 275px 0 16px 0;
     border-radius: 24px;
-    width: 275px;
 }
 
 .perfil {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .img-perfil {
     display: flex;
-    width: 52.34px;
-    height: 52.15px;
-
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
-    border: 3px solid rgba(255, 255, 255, 0.4);
+    border: 3px solid #B4A4A4;
 }
 
 .nome-igreja {
@@ -114,6 +85,7 @@ h5 {
 .container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
 }
 
 .social-titulo {
@@ -158,6 +130,7 @@ h5 {
     align-items: center;
     padding: 0px;
     gap: 16px;
+    margin-bottom: 16px;
 }
 
 .button-msg {
@@ -186,11 +159,10 @@ h5 {
 .container-pix {
     display: flex;
     flex-direction: column;
-    width: 275px;
     border-radius: 8px;
     padding: 8px;
     background-color: #32BCAD;
-    margin-top: 8px;
+    margin: 8px 0;
 }
 
 .button-pix {
