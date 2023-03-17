@@ -106,15 +106,48 @@ header {
 .link-instagram {
     color: #313131;
     background: #E4E4E4;
+    transition: all 0.2s;
+}
+
+.link-instagram:hover {
+    color: #000000;
+    background: #cecece;
+}
+
+.link-instagram:active {
+    color: #898989;
+    background: #E4E4E4;
 }
 
 .link-facebook {
+    transition: all 0.2s;
     color: white;
     background: #1877F2
 }
 
-.link-tiktok {
+.link-facebook:hover {
     color: white;
+    background: #0064E4
+}
+
+.link-facebook:active {
+    color: #0E4791;
+    background: #1877F2
+}
+
+.link-tiktok {
+    transition: all 0.2s;
+    color: white;
+    background: #000000;
+}
+
+.link-tiktok:hover {
+    color: white;
+    background: #111111;
+}
+
+.link-tiktok:active {
+    color: #898989;
     background: #000000;
 }
 
@@ -123,11 +156,20 @@ header {
     background: #ff0000;
 }
 
+.link-youtube:hover {
+    transition: all 0.2s;
+    color: white;
+    background: #E90000;
+}
+
+.link-youtube:active {
+    color: #990201;
+    background: #ff0000;
+}
+
 .container-messenger{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 0px;
     gap: 16px;
     margin-bottom: 16px;
@@ -146,21 +188,42 @@ header {
 
 }
 
-.link-telegram {
+
+.button-contato {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 4px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 50%;
+    margin: 8px 0px;
+
+}
+
+.titulo-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato-telegram {
     color: white;
     background: #2AABEE
 }
 
-.link-whatsapp {
+.contato-whatsapp {
     color: white;
     background: #25D366;
 }
+
 
 .container-pix {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    padding: 8px;
+    padding: 16px;
     background-color: #32BCAD;
     margin: 8px 0;
 }
@@ -174,6 +237,11 @@ header {
     border-radius: 8px;
     text-decoration: none;
     margin: 0px 0px;
+    color: white;
+    background: #70D0C6;
+    margin-top: 8px;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .pix-titulo {
@@ -181,17 +249,11 @@ header {
     text-align: left;
 }
 
-.link-pix {
-    color: white;
-    background: #70D0C6;
-    margin-top: 8px;
-}
-
 .copia-pix {
     display: flex;
     background-color: #C6ECE8;
     border-radius: 4px;
-    padding: 4px;
+    padding: 12px 8px;
     text-align: center;
 }
 
