@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     
     background-image: url('./imgs/bpLenoBG.png'), url('./imgs/bg1.png');
@@ -15,13 +15,17 @@ header {
     justify-content: center;
 }
 
-main {
-    width: 400px;
+main {display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: auto;
+    max-width: 400px;
 }
 
 .container-top {
     display: flex;
-    width: 400px;
+    justify-content: center;
+    width: 90%;
 }
 
 .card {
@@ -76,6 +80,7 @@ main {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 16px;
 }
 
@@ -219,8 +224,6 @@ main {
     margin: 8px 0;
 }
 
-
-
 .pix-titulo {
     margin: 0;
     text-align: left;
@@ -233,6 +236,7 @@ main {
     align-items: center;
     margin-top: 8px;
     padding: 8px;
+    gap: 8px;
     background-color: #70d0c6;
 }
 
@@ -268,8 +272,12 @@ input:focus {
 #button-pix:hover {
   background-color:#32BCAD;
   color: #FFFFFF;
-  
 }
+
+#button-pix:after {
+    background-color:#32BCAD;
+    color: #FFFFFF;
+  }
 
 .container-culto{
     display: flex;
