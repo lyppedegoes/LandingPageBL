@@ -228,33 +228,56 @@ header {
     margin: 8px 0;
 }
 
-.button-pix {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px;
-    gap: 8px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin: 0px 0px;
-    color: white;
-    background: #70D0C6;
-    margin-top: 8px;
-    text-align: center;
-    justify-content: space-between;
-}
+
 
 .pix-titulo {
     margin: 0;
     text-align: left;
 }
 
-.copia-pix {
+.caixa-chave {
     display: flex;
-    background-color: #C6ECE8;
-    border-radius: 4px;
-    padding: 12px 8px;
-    text-align: center;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #70d0c6;
+}
+
+input,
+button {
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+}
+
+input {
+  display: none;
+  background-color: #d4e8ff;
+  color: #06224a;
+  width: 500px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#button-pix {
+  display: flex;
+  background-color: #C6ECE8;
+  border-radius: 4px;
+  padding: 12px 8px;
+  text-align: center;
+  cursor: pointer;
+  color: #306A64;
+}
+
+#button-pix:hover {
+  background-color:#32BCAD;
+  color: #FFFFFF;
+  
 }
 
 .container-culto{
