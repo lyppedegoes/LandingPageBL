@@ -88,12 +88,11 @@
         <section class="container-pix">
             <h2>Seja um semeador da Palavra de Deus, contribua para o crescimento dessa obra</h2>
             <a class="caixa-chave link-pix">
-                <img src="icons/iconPix.svg">
+                
+                <div class="titulo-pix-icon">
+                    <img src="icons/iconPix.svg">
                 <div class="pix-titulo">
                     <h2>Chave PIX</h2>
-                    <h4>@santuariomop@gmail.com<h4>
-                </div>
-                <div>
                     <input
                     type="text"
                     name="texto"
@@ -101,12 +100,22 @@
                     readonly
                     placeholder="Digite alguma coisa"
                     value="santuariomop@gmail.com"
-                    />
-                    <button id="button-pix" onclick="copiarTexto()"><h5>clique para copiar a chave</h5></button>
+                  />
+                </div>
+                </div>
+                <div>
                 
-                    <script src="script.js"></script>
+                  <button id="button-pix" 
+                  onclick="copiarTexto()",
+                  onclick="this.innerHTML='a chave PIX foi copiada!'"
+                  >clique para copiar a chave</button>
+                  
+                  <script src="script.js"></script>
                 </div>
             </a>
+
+            
+
         </section>
         <section class="container-culto">
             <a href="#" class="button-msg link-horarios">
