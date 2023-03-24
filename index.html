@@ -106,9 +106,8 @@
                 <div>
                 
                   <button id="button-pix" 
-                  onclick="alterarBotao(), copiarTexto()"
+                  onclick="copiarTexto(), alterarBotao()"
                   >clique para copiar a chave</button>
-                  <script src="script.js"></script>
                 </div>
             </a>
 
@@ -116,13 +115,13 @@
 
         </section>
         <section class="container-culto">
-            <a href="#" class="button-msg link-horarios">
+            <button type="submit" class="button-msg" onclick="openPopup()">
                 <img src="icons/iconClock.svg">
                 <div class="social-titulo-msg">
                     <h2>Horário</h2>
                     <h4>dos Cultos<h4>
                 </div>
-            </a>
+            </button>
             <a href="https://goo.gl/maps/RUXnD8mKgcaCdUhu9" class="button-msg link-mapa">
                 <img src="icons/iconMap.svg">
                 <div class="social-titulo-msg">
@@ -132,6 +131,33 @@
                 </a>
         </section>
 
+        <div class="popup" id="popup">
+            <div class="tituloHorarios">
+                <img src="icons/iconClock-white.svg">
+                <h2>Horario dos Cultos</h2>
+            </div>
+            <div class="reuniao">
+                <h1>Domingo</h1>
+                <h4>Concentração de Poder e Oração pela Família</h4>
+                <h1>8h da manhã e 18h</h1>
+            </div>
+            <div class="linhaHorario"></div>
+            <div class="reuniao">
+                <h1>Quarta-Feira</h1>
+                <h4>Reunião de Busca ao Espírito Santo</h4>
+                <h1>19h30</h1>
+            </div>
+            <div class="linhaHorario"></div>
+            <div class="reuniao">
+                <h1>Sexta-Feira</h1>
+                <h4>Reunião de Libertação</h4>
+                <h1>19h30</h1>
+            <button class="buttonFechar" onclick="closePopup()">
+                <h2>FECHAR</h2>
+            </button>
+            </div>
+        </div>
+    <script src="script.js"></script>
     </main>
 
     <footer>

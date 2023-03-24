@@ -188,6 +188,7 @@ main {display: flex;
     text-decoration: none;
     width: 50%;
     margin: 8px 0px;
+    cursor: pointer;
 
 }
 
@@ -351,4 +352,73 @@ footer {
 
 .cr {
     color: #B8B8B8;
+}
+
+.popup {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+    margin: 32px;
+    height: auto;
+    border-radius: 32px;
+
+    background: rgba(72, 73, 97, 0.4);
+    backdrop-filter: blur(47px);
+}
+
+.open-popup {
+    visibility:visible;
+}
+
+
+.iconclock-pop {
+    color: #FFFFFF;
+}
+
+.tituloHorarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+    width: 250px;
+
+    background: #2d2e3a;
+    border-radius: 16px;
+}
+
+.reuniao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+}
+
+.linhaHorario {
+    width: 275px;
+    height: 2px;
+    
+    background: #2d2e3a;
+}
+
+.buttonFechar {
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+
+    width: 250px;
+    margin-top: 8px;
+
+    background: #e8e8e8;
+    border-radius: 16PX;
+
+    cursor: pointer;
 }
